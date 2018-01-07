@@ -1,0 +1,48 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysqlDs": {
+    "host": "165.227.71.39",
+    "port": 3306,
+    "url": "",
+    "database": "getting_started",
+    "password": "XXX",
+    "name": "mysqlDs",
+    "user": "forrest",
+    "connector": "mysql"
+  },
+  "undercrowd_test": {
+    "host": "165.227.71.39",
+    "port": 3306,
+    "url": "",
+    "database": "undercrowd_test",
+    "password": "XXX",
+    "name": "undercrowd_test",
+    "user": "forrest",
+    "connector": "mysql"
+  },
+  "undercrowd_p1": {
+    "host": "165.227.71.39",
+    "port": 3306,
+    "url": "",
+    "database": "undercrowd_p1",
+    "password": "XXX",
+    "name": "undercrowd_p1",
+    "user": "forrest",
+    "connector": "mysql",
+    "charset": "utf8mb4",
+    "collation": "utf8mb4_general_ci"
+  },
+  "undercrowd_p2": {
+    "host": "165.227.71.39",
+    "port": 3306,
+    "url": "",
+    "database": "undercrowd_p2",
+    "password": "XXX",
+    "name": "undercrowd_p2",
+    "user": "forrest",
+    "connector": "mysql"
+  }
+}

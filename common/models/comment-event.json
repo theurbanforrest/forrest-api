@@ -1,0 +1,38 @@
+{
+  "name": "CommentEvent",
+  "plural": "CommentEvents",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "comment_id": {
+      "type": "number",
+      "required": true
+    },
+    "comment_user_id": {
+      "type": "string",
+      "required": true
+    },
+    "event_name": {
+      "type": "string",
+      "required": true
+    },
+    "event_user_id": {
+      "type": "string",
+      "required": true
+    },
+    "event_body": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "any",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

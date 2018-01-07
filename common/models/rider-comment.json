@@ -1,0 +1,57 @@
+{
+  "name": "RiderComment",
+  "plural": "RiderComments",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "user_name": {
+      "type": "string",
+      "required": true
+    },
+    "comment_body": {
+      "type": "string",
+      "required": false
+    },
+    "station_name": {
+      "type": "string",
+      "required": true
+    },
+    "station_lines": {
+      "type": "string",
+      "required": true
+    },
+    "station_uid": {
+      "type": "string",
+      "required": true
+    },
+    "comment_on_line": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": false
+    },
+    "timestamp": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "commentEvents": {
+      "type": "hasMany",
+      "model": "CommentEvent",
+      "foreignKey": "comment_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
