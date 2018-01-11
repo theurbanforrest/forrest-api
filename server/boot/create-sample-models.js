@@ -30,6 +30,24 @@ module.exports = function(app) {
     });
   });
 
+  //example data for UserProfile model
+  app.dataSources.mysqlDs.automigrate('UserProfile', function(err){
+    if (err) throw err;
+
+    app.models.UserProfile.create([{
+      user_id: 'XYZ1',
+      user_name: 'theurbanforrest'
+
+    }, {
+      user_id: 'XYZ2',
+      user_name: 'stratboi4'
+    }, ], function(err, userProfiles){
+      if (err) throw err;
+
+      console.log('Models created: \n', userProfiles)
+    })
+  });
+
   /*example data for CommentEvent model
   app.dataSources.undercrowd_p1.automigrate('CommentEvent', function(err) {
     if (err) throw err;
