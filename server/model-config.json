@@ -54,5 +54,9 @@
   "CommentEvent": {
     "dataSource": "undercrowd_p1",
     "public": true
+  },
+  "UserProfile": {
+    "dataSource": "undercrowd_p1",
+    "public": true
   }
 }
