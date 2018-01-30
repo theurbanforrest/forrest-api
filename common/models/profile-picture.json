@@ -1,0 +1,27 @@
+{
+  "name": "ProfilePicture",
+  "plural": "ProfilePictures",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "timestamp": {
+      "type": "date",
+      "required": true
+    },
+    "picture_data": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
