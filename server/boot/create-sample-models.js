@@ -30,7 +30,7 @@ module.exports = function(app) {
     });
   });
 
-  //example data for ProfilePicture
+  /*example data for ProfilePicture
   app.dataSources.undercrowd_p1.automigrate('ProfilePicture', function(err) {
     if (err) throw err;
 
@@ -47,7 +47,7 @@ module.exports = function(app) {
 
       console.log('Models created: \n', profilePictures);
     });
-  });
+  });*/
 
   /*example data for UserProfile model
   app.dataSources.undercrowd_p1.automigrate('UserProfile', function(err){
