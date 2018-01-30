@@ -31,7 +31,7 @@ module.exports = function(app) {
   });
 
   //example data for ProfilePicture
-  app.dataSources.mysqlDs.automigrate('ProfilePicture', function(err) {
+  app.dataSources.undercrowd_p1.automigrate('ProfilePicture', function(err) {
     if (err) throw err;
 
     app.models.CoffeeShop.create([{
@@ -42,7 +42,7 @@ module.exports = function(app) {
       "user_id": 'XYZ2',
       "timestamp": '',
       "picture_data": 'somepath2'
-    }], function(err, coffeeShops) {
+    }], function(err, profilePictures) {
       if (err) throw err;
 
       console.log('Models created: \n', profilePictures);
