@@ -34,7 +34,7 @@ module.exports = function(app) {
   app.dataSources.undercrowd_p1.automigrate('ProfilePicture', function(err) {
     if (err) throw err;
 
-    app.models.CoffeeShop.create([{
+    app.models.ProfilePicture.create([{
       "user_id": 'XYZ1',
       "timestamp": '',
       "picture_data": 'somepath1'
