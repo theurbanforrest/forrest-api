@@ -36,11 +36,11 @@ module.exports = function(app) {
 
     app.models.ProfilePicture.create([{
       "user_id": 'XYZ1',
-      "timestamp": '',
+      "timestamp": 1514516459114,
       "picture_data": 'somepath1'
     }, {
       "user_id": 'XYZ2',
-      "timestamp": '',
+      "timestamp": 1514516459114,
       "picture_data": 'somepath2'
     }], function(err, profilePictures) {
       if (err) throw err;
