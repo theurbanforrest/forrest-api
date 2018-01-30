@@ -16,7 +16,7 @@
       "required": true
     },
     "picture_data": {
-      "type": "string",
+      "type": "any",
       "required": true
     }
   },
