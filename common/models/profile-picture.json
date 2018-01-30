@@ -12,7 +12,7 @@
       "required": true
     },
     "timestamp": {
-      "type": "date",
+      "type": "any",
       "required": true
     },
     "picture_data": {
