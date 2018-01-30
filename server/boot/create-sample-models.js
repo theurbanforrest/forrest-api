@@ -30,6 +30,25 @@ module.exports = function(app) {
     });
   });
 
+  //example data for ProfilePicture
+  app.dataSources.mysqlDs.automigrate('ProfilePicture', function(err) {
+    if (err) throw err;
+
+    app.models.CoffeeShop.create([{
+      "user_id": 'XYZ1',
+      "timestamp": '',
+      "picture_data": 'somepath1'
+    }, {
+      "user_id": 'XYZ2',
+      "timestamp": '',
+      "picture_data": 'somepath2'
+    }], function(err, coffeeShops) {
+      if (err) throw err;
+
+      console.log('Models created: \n', profilePictures);
+    });
+  });
+
   /*example data for UserProfile model
   app.dataSources.undercrowd_p1.automigrate('UserProfile', function(err){
     if (err) throw err;
