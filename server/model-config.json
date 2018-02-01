@@ -59,8 +59,8 @@
     "dataSource": "undercrowd_p1",
     "public": true
   },
-  "ProfilePicture": {
-    "dataSource": "undercrowd_p1",
+  "UserPicture": {
+    "dataSource": "storage",
     "public": true
   }
 }

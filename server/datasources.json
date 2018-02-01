@@ -44,5 +44,11 @@
     "name": "undercrowd_p2",
     "user": "forrest",
     "connector": "mysql"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./files"
   }
 }

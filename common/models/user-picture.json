@@ -1,6 +1,6 @@
 {
-  "name": "ProfilePicture",
-  "plural": "ProfilePictures",
+  "name": "UserPicture",
+  "plural": "UserPictures",
   "base": "Model",
   "idInjection": true,
   "options": {
