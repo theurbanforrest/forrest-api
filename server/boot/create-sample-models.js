@@ -30,7 +30,6 @@ module.exports = function(app) {
     });
   });
 
-  example data for UserProfile model
   app.dataSources.undercrowd_p1.automigrate('UserProfile', function(err){
     if (err) throw err;
 
