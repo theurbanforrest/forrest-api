@@ -30,6 +30,7 @@ module.exports = function(app) {
     });
   });
 
+/** example data for UserProfile
   app.dataSources.undercrowd_p1.automigrate('UserProfile', function(err){
     if (err) throw err;
 
@@ -48,7 +49,7 @@ module.exports = function(app) {
       console.log('Models created: \n', userProfiles)
     })
   });
-  
+  **/
 
   /*example data for CommentEvent model
   app.dataSources.undercrowd_p1.automigrate('CommentEvent', function(err) {
