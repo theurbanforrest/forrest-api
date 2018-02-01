@@ -30,24 +30,26 @@ module.exports = function(app) {
     });
   });
 
-  /*example data for UserProfile model
+  example data for UserProfile model
   app.dataSources.undercrowd_p1.automigrate('UserProfile', function(err){
     if (err) throw err;
 
     app.models.UserProfile.create([{
       user_id: 'XYZ1',
-      user_name: 'theurbanforrest'
+      user_name: 'theurbanforrest',
+      picture: ''
 
     }, {
       user_id: 'XYZ2',
-      user_name: 'stratboi4'
+      user_name: 'stratboi4',
+      picture: ''
     }, ], function(err, userProfiles){
       if (err) throw err;
 
       console.log('Models created: \n', userProfiles)
     })
   });
-  */
+  
 
   /*example data for CommentEvent model
   app.dataSources.undercrowd_p1.automigrate('CommentEvent', function(err) {
