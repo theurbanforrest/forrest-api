@@ -1,0 +1,35 @@
+{
+  "name": "BobaOrder",
+  "plural": "BobaOrders",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "customer": {
+      "type": "string",
+      "required": true
+    },
+    "contact": {
+      "type": "string",
+      "required": true
+    },
+    "plus_one": {
+      "type": "string"
+    },
+    "drink_pref": {
+      "type": "string"
+    },
+    "food_allergies": {
+      "type": "string"
+    },
+    "orderAccepted": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -66,5 +66,9 @@
   "UserPicture": {
     "dataSource": "storage",
     "public": true
+  },
+  "BobaOrder": {
+    "dataSource": "undercrowd_p1",
+    "public": true
   }
 }
