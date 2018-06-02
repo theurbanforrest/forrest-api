@@ -6,23 +6,28 @@ anything already in the database
 
 */
 
-
-
 module.exports = function(app) {
   
-  //example data for CoffeeShop model
-  app.dataSources.mysqlDs.automigrate('CoffeeShop', function(err) {
+
+/** example data for BobaOrder **/
+
+  app.dataSources.undercrowd_p1.automigrate('BobaOrder', function(err) {
     if (err) throw err;
 
-    app.models.CoffeeShop.create([{
-      name: 'Bel Cafe',
-      city: 'Vancouver'
+    app.models.BobaOrder.create([{
+      customer: 'Johnny Tsunami',
+      contact: 'jt@aloha.com',
+      plus_one: '',
+      drink_pref: 'beer and whiskey',
+      food_allergies: '',
+      orderAccepted: true
     }, {
-      name: 'Three Bees Coffee House',
-      city: 'San Mateo'
-    }, {
-      name: 'Caffe Artigiano',
-      city: 'Vancouver'
+      customer: 'Lui Chan',
+      contact: 'lc@josun.com',
+      plus_one: '',
+      drink_pref: 'red wine',
+      food_allergies: '',
+      orderAccepted: true
     }, ], function(err, coffeeShops) {
       if (err) throw err;
 
