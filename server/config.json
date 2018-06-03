@@ -22,5 +22,14 @@
       "limit": "100kb"
     },
     "cors": false
+  },
+  "httpMode": false,
+  "certConfig": {
+    "path": "/private/",
+    "key": "privatekey.pem",
+    "cert": "certificate.pem",
+    "ca": [],
+    "requestCert": false,
+    "rejectUnauthorized": false
   }
 }
