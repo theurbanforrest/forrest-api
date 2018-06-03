@@ -50,7 +50,7 @@ if (require.main === module) {
 
 
 
-/*** server.js that works on http ***/
+/*** server.js that works on http
 
   'use strict';
 
@@ -81,4 +81,4 @@ if (require.main === module) {
     if (require.main === module)
       app.start();
   });
-
+***/
