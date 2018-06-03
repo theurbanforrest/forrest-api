@@ -22,7 +22,7 @@
   },
   "httpMode": false,
   "certConfig": {
-    "path": "/private",
+    "path": "/server/private",
     "key": "privatekey.pem",
     "cert": "certificate.pem",
     "ca": [],
