@@ -22,9 +22,9 @@
   },
   "httpMode": false,
   "certConfig": {
-    "path": "/etc/letsencrypt/live/liquidpineapple.com",
-    "key": "privkey.pem",
-    "cert": "cert.pem",
+    "path": "/etc/letsencrypt/archive/liquidpineapple.com",
+    "key": "privkey1.pem",
+    "cert": "cert1.pem",
     "ca": [],
     "requestCert": false,
     "rejectUnauthorized": false
