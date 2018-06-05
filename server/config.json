@@ -22,9 +22,9 @@
   },
   "httpMode": false,
   "certConfig": {
-    "path": "/forrest-api/server/private",
-    "key": "privatekey.pem",
-    "cert": "certificate.pem",
+    "path": "/etc/letsencrypt/live/liquidpineapple.com",
+    "key": "privkey.pem",
+    "cert": "cert.pem",
     "ca": [],
     "requestCert": false,
     "rejectUnauthorized": false
