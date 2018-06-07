@@ -20,14 +20,14 @@ example data for BobaOrder
       plus_one: 'Kealoha Makalani',
       drink_pref: 'beer and whiskey',
       food_allergies: '',
-      orderAccepted: true
+      order_accepted: true
     }, {
       name: 'Lui Chan',
       user_id: 'XYZ123',
       plus_one: 'Sharon Choi',
       drink_pref: 'red wine',
       food_allergies: '',
-      orderAccepted: true
+      order_accepted: true
     }, ], function(err, coffeeShops) {
       if (err) throw err;
 
