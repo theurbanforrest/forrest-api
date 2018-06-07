@@ -9,7 +9,7 @@ anything already in the database
 module.exports = function(app) {
   
 
-example data for BobaOrder
+/*** example data for BobaOrder ***/
 
   app.dataSources.undercrowd_p1.automigrate('BobaOrder', function(err) {
     if (err) throw err;
@@ -34,6 +34,9 @@ example data for BobaOrder
       console.log('Models created: \n', coffeeShops);
     });
   });
+
+
+
 
 
 /** example data for UserProfile
