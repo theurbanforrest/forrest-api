@@ -7,11 +7,11 @@
     "validateUpsert": true
   },
   "properties": {
-    "customer": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "contact": {
+    "user_id": {
       "type": "string",
       "required": true
     },
@@ -24,7 +24,7 @@
     "food_allergies": {
       "type": "string"
     },
-    "orderAccepted": {
+    "order_accepted": {
       "type": "boolean"
     }
   },
