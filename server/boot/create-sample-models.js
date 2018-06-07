@@ -9,22 +9,22 @@ anything already in the database
 module.exports = function(app) {
   
 
-/** example data for BobaOrder
+example data for BobaOrder
 
   app.dataSources.undercrowd_p1.automigrate('BobaOrder', function(err) {
     if (err) throw err;
 
     app.models.BobaOrder.create([{
-      customer: 'Johnny Tsunami',
-      contact: 'jt@aloha.com',
-      plus_one: '',
+      name: 'Johnny Tsunami',
+      user_id: 'XYZ123',
+      plus_one: 'Kealoha Makalani',
       drink_pref: 'beer and whiskey',
       food_allergies: '',
       orderAccepted: true
     }, {
-      customer: 'Lui Chan',
-      contact: 'lc@josun.com',
-      plus_one: '',
+      name: 'Lui Chan',
+      user_id: 'XYZ123',
+      plus_one: 'Sharon Choi',
       drink_pref: 'red wine',
       food_allergies: '',
       orderAccepted: true
@@ -34,7 +34,7 @@ module.exports = function(app) {
       console.log('Models created: \n', coffeeShops);
     });
   });
-**/
+
 
 /** example data for UserProfile
   app.dataSources.undercrowd_p1.automigrate('UserProfile', function(err){
