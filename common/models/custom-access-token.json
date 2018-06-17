@@ -1,0 +1,23 @@
+{
+  "name": "CustomAccessToken",
+  "plural": "CustomAccessTokens",
+  "base": "AccessToken",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "polymorphic": {
+        "idType": "string",
+        "foreignKey": "userId",
+        "discriminator": "principalType"
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

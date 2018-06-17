@@ -70,5 +70,13 @@
   "BobaOrder": {
     "dataSource": "undercrowd_p1",
     "public": true
+  },
+  "CustomUser": {
+    "dataSource": "undercrowd_p1",
+    "public": true
+  },
+  "CustomAccessToken": {
+    "dataSource": "undercrowd_p1",
+    "public": true
   }
 }
