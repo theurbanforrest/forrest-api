@@ -13,8 +13,8 @@ module.exports = function(app) {
   app.dataSources.undercrowd_p1.automigrate('CustomAccessToken', function(err){
     
     app.models.CustomAccessToken.create([{
-      ttl: 'xyz',
-      scopes: 'xyz',
+      ttl: 45,
+      scopes: ['hello','world'],
       created: '2018-06-15',
       userId: 'XYZ123',
       principalType: 'hello'
