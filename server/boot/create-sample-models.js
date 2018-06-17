@@ -8,7 +8,25 @@ anything already in the database
 
 module.exports = function(app) {
   
-/*** example data for CustomAccessToken ***/
+/*** example data for CustomUser and CustomAccessToken ***/
+
+  app.dataSources.undercrowd_p1.automigrate('CustomUser', function(err){
+    
+    app.models.CustomUser.create([{
+      realm: "the realm",
+      username: "ned stark",
+      password: 'winteriscoming',
+      email: 'kingned@thenorth.com',
+      emailVerified: true,
+      verificationToken: 'xyz123'
+    }, ], function(err, CustomAccessTokens) {
+      if(err) throw err;
+
+      console.log('Model CustomUser created: \n', CustomAccessTokens);
+    });
+
+  });
+
 
   app.dataSources.undercrowd_p1.automigrate('CustomAccessToken', function(err){
     
