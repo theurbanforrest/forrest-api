@@ -8,6 +8,17 @@ anything already in the database
 
 module.exports = function(app) {
   
+/*** example data for CustomAccessToken ***/
+
+  app.dataSources.undercrowd_p1.automigrate('CustomAccessToken', function(err){
+    ttl: 'xyz',
+    scopes: 'xyz',
+    created: '2018-06-15',
+    userId: 'XYZ123',
+    principalType: 'hello'
+
+  });
+
 
 /*** example data for BobaOrder
 
