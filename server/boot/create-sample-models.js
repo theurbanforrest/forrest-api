@@ -8,7 +8,7 @@ anything already in the database
 
 module.exports = function(app) {
   
-/*** example data for CustomUser and CustomAccessToken ***/
+/*** example data for CustomUser and CustomAccessToken 
 
   app.dataSources.undercrowd_p1.automigrate('CustomUser', function(err){
     
