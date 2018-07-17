@@ -31,7 +31,7 @@
       "type":"string"
     },
     "phone":{
-      "type":"number"
+      "type":"string"
     }
   },
   "validations": [],
