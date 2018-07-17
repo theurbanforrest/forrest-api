@@ -26,6 +26,12 @@
     },
     "order_accepted": {
       "type": "boolean"
+    },
+    "email":{
+      "type":"string"
+    },
+    "phone":{
+      "type":"number"
     }
   },
   "validations": [],
