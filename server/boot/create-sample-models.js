@@ -1,8 +1,9 @@
 //added this file from tutorial: https://loopback.io/doc/en/lb2/Connect-your-API-to-a-data-source.html
 /*
 
-IMPORTANT: This file executes everytime the API starts up.  It will overwrite
-anything already in the database
+IMPORTANT: This file executes everytime the API starts up.
+
+If you do an app.models.CustomUser.create([{}]), it will overwrite that model!!
 
 */
 
