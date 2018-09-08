@@ -29,7 +29,10 @@
     "timestamp": {
       "type": "any",
       "required": true
-    }
+    },
+    "station_name": {
+      "type": "string"
+    },
   },
   "validations": [],
   "relations": {},
