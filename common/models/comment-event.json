@@ -32,7 +32,7 @@
     },
     "station_name": {
       "type": "string"
-    },
+    }
   },
   "validations": [],
   "relations": {},
