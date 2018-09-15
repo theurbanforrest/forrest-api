@@ -15,6 +15,9 @@
       "type": "string",
       "required": true
     },
+    "comment_user_name": {
+      "type": "string"
+    },
     "event_name": {
       "type": "string",
       "required": true
@@ -22,6 +25,9 @@
     "event_user_id": {
       "type": "string",
       "required": true
+    },
+    "event_user_name": {
+      "type": "string"
     },
     "event_body": {
       "type": "string"
@@ -32,7 +38,8 @@
     },
     "station_name": {
       "type": "string"
-    }
+    },
+
   },
   "validations": [],
   "relations": {},
