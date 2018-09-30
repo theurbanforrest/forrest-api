@@ -39,10 +39,7 @@
     "riderComments": {
       "type": "hasMany",
       "model": "RiderComment",
-      "foreignKey": "user_id",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": "user_id"
     },
     "userProfiles": {
       "type": "hasOne",
