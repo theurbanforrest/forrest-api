@@ -4,3 +4,11 @@
     "generateOperationScopedModels": true
   }
 }
+
+/** If disabled use this instead
+
+{
+  "loopback-component-explorer": null
+}
+
+**/

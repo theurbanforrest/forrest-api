@@ -27,15 +27,32 @@
     "order_accepted": {
       "type": "boolean"
     },
-    "email":{
-      "type":"string"
+    "email": {
+      "type": "string"
     },
-    "phone":{
-      "type":"string"
+    "phone": {
+      "type": "string"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "riderComments": {
+      "type": "hasMany",
+      "model": "RiderComment",
+      "foreignKey": "user_id",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "userProfiles": {
+      "type": "hasOne",
+      "model": "UserProfile",
+      "foreignKey": "user_id",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [
     {
       "accessType": "*",

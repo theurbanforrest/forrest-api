@@ -50,6 +50,14 @@
       "type": "hasMany",
       "model": "CommentEvent",
       "foreignKey": "comment_id"
+    },
+    "bobaOrder": {
+      "type": "belongsTo",
+      "model": "BobaOrder",
+      "foreignKey": "user_id",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [
