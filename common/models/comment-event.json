@@ -42,11 +42,7 @@
   },
   "validations": [],
   "relations": {
-    "riderComment": {
-      "type": "belongsTo",
-      "model": "RiderComment",
-      "foreignKey": "comment_id"
-    }
+
   },
   "acls": [
     {
