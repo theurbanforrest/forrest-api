@@ -45,10 +45,7 @@
     "riderComment": {
       "type": "belongsTo",
       "model": "RiderComment",
-      "foreignKey": "comment_id",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": "comment_id"
     }
   },
   "acls": [

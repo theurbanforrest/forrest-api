@@ -47,10 +47,7 @@
     "userProfiles": {
       "type": "hasOne",
       "model": "UserProfile",
-      "foreignKey": "user_id",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": "user_id"
     }
   },
   "acls": [
