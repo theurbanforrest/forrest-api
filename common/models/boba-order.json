@@ -36,11 +36,6 @@
   },
   "validations": [],
   "relations": {
-    "riderComments": {
-      "type": "hasMany",
-      "model": "RiderComment",
-      "foreignKey": "user_id"
-    },
     "userProfiles": {
       "type": "hasOne",
       "model": "UserProfile",
