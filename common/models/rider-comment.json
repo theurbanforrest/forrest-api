@@ -11,6 +11,10 @@
       "type": "string",
       "required": true
     },
+    "bobaOrder_id": {
+      "type": "number",
+      "required": true
+    },
     "user_name": {
       "type": "string",
       "required": true
@@ -54,7 +58,7 @@
     "bobaOrder": {
       "type": "belongsTo",
       "model": "BobaOrder",
-      "foreignKey": "id"
+      "foreignKey": "user_id"
     }
   },
   "acls": [
