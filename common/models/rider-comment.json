@@ -11,10 +11,6 @@
       "type": "string",
       "required": true
     },
-    "bobaOrder_id": {
-      "type": "number",
-      "required": true
-    },
     "user_name": {
       "type": "string",
       "required": true
