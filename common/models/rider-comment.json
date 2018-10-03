@@ -54,7 +54,7 @@
     "bobaOrder": {
       "type": "belongsTo",
       "model": "BobaOrder",
-      "foreignKey": "user_id"
+      "foreignKey": "id"
     }
   },
   "acls": [
