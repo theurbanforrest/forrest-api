@@ -17,8 +17,8 @@ module.exports = function(app) {
         name: 'Cheeky Cheek Entertainment Inc.',
         description: 'Live DJ for weddings',
         business_address: '260 Madison Ave. New York, NY 10016',
-        fk_flavor_id: '1',
-        fk_status_id: '1',
+        fk_flavor_id: 1,
+        fk_status_id: 1,
         last_modified: {
           'time': 1543893497082,
           'user': 'DJ Forrest'
@@ -41,9 +41,9 @@ module.exports = function(app) {
         description: "NYC and Hawaii's hottest beat mixer",
         phone: '808-284-0677',
         email: 'djforrest@urbanbeats.com',
-        fk_flavor_id: '1',
-        fk_status_id: '1',
-        fk_group_id: '1',
+        fk_flavor_id: 1,
+        fk_status_id: 1,
+        fk_group_id: 1,
         last_modified: {
           'time': 1543893497082,
           'user': 'DJ Forrest'
@@ -67,9 +67,9 @@ module.exports = function(app) {
         task_date_time: 1543893497082,
         due_date_time: 1543893497082,
         length_in_ms: 50000,
-        fk_flavor_id: '1',
-        fk_status_id: '1',
-        fk_parent_task_id: '1',
+        fk_flavor_id: 1,
+        fk_status_id: 1,
+        fk_parent_task_id: 1,
         last_modified: {
           'time': 1543893497082,
           'user': 'DJ Forrest'
@@ -94,8 +94,8 @@ module.exports = function(app) {
         entry_date_time: 1543893497082,
         due_date_time: 1543893497082,
         amount: '287.50',
-        fk_flavor_id: '1',
-        fk_status_id: '1',
+        fk_flavor_id: 1,
+        fk_status_id: 1,
         last_modified: {
           'time': 1543893497082,
           'user': 'DJ Forrest'
