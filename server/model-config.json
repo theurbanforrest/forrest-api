@@ -78,5 +78,29 @@
   "CustomAccessToken": {
     "dataSource": "undercrowd_p1",
     "public": true
+  },
+  "Person": {
+    "dataSource": "undercrowd_p1",
+    "public": true
+  },
+  "Group": {
+    "dataSource": "undercrowd_p1",
+    "public": true
+  },
+  "Task": {
+    "dataSource": "undercrowd_p1",
+    "public": true
+  },
+  "Entry": {
+    "dataSource": "undercrowd_p1",
+    "public": true
+  },
+  "Status": {
+    "dataSource": "undercrowd_p1",
+    "public": true
+  },
+  "Flavor": {
+    "dataSource": "undercrowd_p1",
+    "public": true
   }
 }

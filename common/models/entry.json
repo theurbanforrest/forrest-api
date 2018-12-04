@@ -1,6 +1,6 @@
 {
-  "name": "Person",
-  "plural": "Persons",
+  "name": "Entry",
+  "plural": "Entrys",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -14,11 +14,15 @@
     "description": {
       "type": "string"
     },
-    "phone": {
+    "entry_date_time": {
       "type": "string"
     },
-    "email": {
+    "due_date_time": {
       "type": "string"
+    },
+    "amount": {
+      "type": "number",
+      "required": true
     },
     "fk_flavor_id": {
       "type": "string",
@@ -27,9 +31,6 @@
     "fk_status_id": {
       "type": "string",
       "required": true
-    },
-    "fk_group_id": {
-      "type": "string"
     },
     "last_modified": {
       "type": "object",

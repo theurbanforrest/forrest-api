@@ -8,6 +8,149 @@ If you do an app.models.CustomUser.create([{}]), it will overwrite that model!!
 */
 
 module.exports = function(app) {
+
+  /// GROUP
+    app.dataSources.undercrowd_p1.automigrate('Group', function(err){
+      
+      app.models.Group.create([{
+
+        name: 'Cheeky Cheek Entertainment Inc.',
+        description: 'Live DJ for weddings',
+        business_address: '260 Madison Ave. New York, NY 10016',
+        fk_flavor_id: '1',
+        fk_status_id: '1',
+        last_modified: {
+          'time': 1543893497082,
+          'user': 'DJ Forrest'
+        }
+
+      }, ], function(err, Groups) {
+        if(err) throw err;
+
+        console.log('Model Group created: \n', Groups);
+      });
+
+    });
+
+  /// PERSON
+    app.dataSources.undercrowd_p1.automigrate('Person', function(err){
+      
+      app.models.Person.create([{
+
+        name: 'DJ Forrest',
+        description: "NYC and Hawaii's hottest beat mixer",
+        phone: '808-284-0677',
+        email: 'djforrest@urbanbeats.com',
+        fk_flavor_id: '1',
+        fk_status_id: '1',
+        fk_group_id: '1',
+        last_modified: {
+          'time': 1543893497082,
+          'user': 'DJ Forrest'
+        }
+
+      }, ], function(err, Persons) {
+        if(err) throw err;
+
+        console.log('Model Person created: \n', Persons);
+      });
+
+    });
+
+  /// TASK
+    app.dataSources.undercrowd_p1.automigrate('Task', function(err){
+      
+      app.models.Task.create([{
+
+        name: 'Chan and Ching Wedding',
+        description: 'A big wedding of sorts',
+        task_date_time: 1543893497082,
+        due_date_time: 1543893497082,
+        length_in_ms: 50000,
+        fk_flavor_id: '1',
+        fk_status_id: '1',
+        fk_parent_task_id: '1',
+        last_modified: {
+          'time': 1543893497082,
+          'user': 'DJ Forrest'
+        }
+
+      }, ], function(err, Tasks) {
+        if(err) throw err;
+
+        console.log('Model Task created: \n', Tasks);
+      });
+
+    });
+
+
+  /// ENTRY
+    app.dataSources.undercrowd_p1.automigrate('Entry', function(err){
+      
+      app.models.Entry.create([{
+
+        name: 'DJ Forrest - deposit due',
+        description: 'Payment 1 of 2 for dj and sound services',
+        entry_date_time: 1543893497082,
+        due_date_time: 1543893497082,
+        amount: 287.50,
+        fk_flavor_id: '1',
+        fk_status_id: '1',
+        last_modified: {
+          'time': 1543893497082,
+          'user': 'DJ Forrest'
+        }
+
+      }, ], function(err, Entrys) {
+        if(err) throw err;
+
+        console.log('Model Entry created: \n', Entrys);
+      });
+
+    });
+
+
+  /// STATUS
+    app.dataSources.undercrowd_p1.automigrate('Status', function(err){
+      
+      app.models.Status.create([{
+
+        name: 'active',
+        model: 'group',
+        description: 'Group that should appear as active',
+        last_modified: {
+          'time': 1543893497082,
+          'user': 'DJ Forrest'
+        }
+
+      }, ], function(err, Statuses) {
+        if(err) throw err;
+
+        console.log('Model Status created: \n', Statuses);
+      });
+
+    });
+
+  /// FLAVOR
+    app.dataSources.undercrowd_p1.automigrate('Flavor', function(err){
+      
+      app.models.Flavor.create([{
+
+        name: 'main contact',
+        model: 'person',
+        description: 'This Person is the main contact for a Group',
+        last_modified: {
+          'time': 1543893497082,
+          'user': 'DJ Forrest'
+        }
+
+      }, ], function(err, Flavors) {
+        if(err) throw err;
+
+        console.log('Model Flavor created: \n', Flavors);
+      });
+
+    });
   
 /*** example data for CustomUser and CustomAccessToken 
 
@@ -20,7 +163,7 @@ module.exports = function(app) {
       email: 'kingned@thenorth.com',
       emailVerified: true,
       verificationToken: 'xyz123'
-    }, ], function(err, CustomAccessTokens) {
+    }, ], function(err, CustomUsers) {
       if(err) throw err;
 
       console.log('Model CustomUser created: \n', CustomAccessTokens);

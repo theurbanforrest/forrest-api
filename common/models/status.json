@@ -1,6 +1,6 @@
 {
-  "name": "Person",
-  "plural": "Persons",
+  "name": "Status",
+  "plural": "Statuses",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -11,24 +11,11 @@
       "type": "string",
       "required": true
     },
+    "model": {
+      "type": "string",
+      "required": true
+    },
     "description": {
-      "type": "string"
-    },
-    "phone": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
-    },
-    "fk_flavor_id": {
-      "type": "string",
-      "required": true
-    },
-    "fk_status_id": {
-      "type": "string",
-      "required": true
-    },
-    "fk_group_id": {
       "type": "string"
     },
     "last_modified": {

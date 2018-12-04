@@ -1,6 +1,6 @@
 {
-  "name": "Person",
-  "plural": "Persons",
+  "name": "Task",
+  "plural": "Tasks",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -12,23 +12,27 @@
       "required": true
     },
     "description": {
+      "type": "string",
+      "required": true
+    },
+    "task_date_time": {
+      "type": "string",
+      "required": true
+    },
+    "due_date_time": {
       "type": "string"
     },
-    "phone": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
+    "length_in_ms": {
+      "type": "number",
+      "required": true
     },
     "fk_flavor_id": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "fk_status_id": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
-    "fk_group_id": {
+    "fk_parent_task_id": {
       "type": "string"
     },
     "last_modified": {
