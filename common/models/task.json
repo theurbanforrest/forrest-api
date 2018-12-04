@@ -58,7 +58,8 @@
     "parentTask": {
       "type": "hasOne",
       "model": "Task",
-      "foreignKey": "fk_parent_task_id"
+      "foreignKey": "id",
+      "primaryKey" : "fk_parent_task_id"
     }
   },
   "acls": [
