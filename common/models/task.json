@@ -64,8 +64,8 @@
     "childTasks": {
       "type": "hasMany",
       "model": "Task",
-      "foreignKey": "id",
-      "primaryKey" : "fk_parent_task_id"
+      "foreignKey": "fk_parent_task_id",
+      "primaryKey" : "id"
     }
   },
   "acls": [
