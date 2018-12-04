@@ -32,6 +32,10 @@
       "type": "number",
       "required": true
     },
+    "fk_task_id": {
+      "type": "number",
+      "required": true
+    },
     "last_modified": {
       "type": "object",
       "required": true

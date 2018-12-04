@@ -66,6 +66,12 @@
       "model": "Task",
       "foreignKey": "fk_parent_task_id",
       "primaryKey" : "id"
+    },
+    "entries": {
+      "type": "hasMany",
+      "model": "Entry",
+      "foreignKey": "fk_task_id",
+      "primaryKey" : "id"
     }
   },
   "acls": [

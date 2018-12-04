@@ -88,7 +88,7 @@ module.exports = function(app) {
 
     });
 
-
+  **/
   /// ENTRY
     app.dataSources.undercrowd_p1.automigrate('Entry', function(err){
       
@@ -101,6 +101,7 @@ module.exports = function(app) {
         amount: '287.50',
         fk_flavor_id: 1,
         fk_status_id: 1,
+        fk_task_id: 1,
         last_modified: {
           'time': 1543893497082,
           'user': 'DJ Forrest'
@@ -114,6 +115,7 @@ module.exports = function(app) {
 
     });
 
+  /**
 
   /// STATUS
     app.dataSources.undercrowd_p1.automigrate('Status', function(err){
