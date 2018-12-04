@@ -42,7 +42,32 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "status": {
+      "type": "hasOne",
+      "model": "Status",
+      "foreignKey": "fk_status_id",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "flavor": {
+      "type": "hasOne",
+      "model": "Flavor",
+      "foreignKey": "fk_flavor_id",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "parentTask": {
+      "type": "hasOne",
+      "model": "Task",
+      "foreignKey": "fk_parent_task_id",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [
     {
       "accessType": "*",
