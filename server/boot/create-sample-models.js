@@ -9,7 +9,12 @@ If you do an app.models.CustomUser.create([{}]), it will overwrite that model!!
 
 module.exports = function(app) {
 
+  /*** BOOT DATA FOR FORREST'S NEW EVENT MANAGER
+  ***
+  ***
+
   /// GROUP
+
     app.dataSources.undercrowd_p1.automigrate('Group', function(err){
       
       app.models.Group.create([{
@@ -171,7 +176,12 @@ module.exports = function(app) {
 
   });
 
+  ***
+  ***
+  END FORREST'S EVENT MANAGER **/
 
+
+  /** example data for CustomAccessToken
   app.dataSources.undercrowd_p1.automigrate('CustomAccessToken', function(err){
     
     app.models.CustomAccessToken.create([{
