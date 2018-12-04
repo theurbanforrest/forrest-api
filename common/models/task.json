@@ -46,26 +46,17 @@
     "status": {
       "type": "hasOne",
       "model": "Status",
-      "foreignKey": "fk_status_id",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": "fk_status_id"
     },
     "flavor": {
       "type": "hasOne",
       "model": "Flavor",
-      "foreignKey": "fk_flavor_id",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": "fk_flavor_id"
     },
     "parentTask": {
       "type": "hasOne",
       "model": "Task",
-      "foreignKey": "fk_parent_task_id",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": "fk_parent_task_id"
     }
   },
   "acls": [
