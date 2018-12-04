@@ -27,13 +27,14 @@
       "required": true
     },
     "fk_flavor_id": {
-      "type": "string"
+      "type": "number",
+      "required": true
     },
     "fk_status_id": {
-      "type": "string"
+      "type": "number"
     },
     "fk_parent_task_id": {
-      "type": "string"
+      "type": "number"
     },
     "last_modified": {
       "type": "object",

@@ -21,15 +21,15 @@
       "type": "string"
     },
     "amount": {
-      "type": "number",
+      "type": "any",
       "required": true
     },
     "fk_flavor_id": {
-      "type": "string",
+      "type": "number",
       "required": true
     },
     "fk_status_id": {
-      "type": "string",
+      "type": "number",
       "required": true
     },
     "last_modified": {
