@@ -93,7 +93,7 @@ module.exports = function(app) {
         description: 'Payment 1 of 2 for dj and sound services',
         entry_date_time: 1543893497082,
         due_date_time: 1543893497082,
-        amount: 287.50,
+        amount: '287.50',
         fk_flavor_id: '1',
         fk_status_id: '1',
         last_modified: {
