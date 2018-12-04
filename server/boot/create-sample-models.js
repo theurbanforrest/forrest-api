@@ -90,6 +90,7 @@ module.exports = function(app) {
 
   **/
   /// ENTRY
+  /**
     app.dataSources.undercrowd_p1.automigrate('Entry', function(err){
       
       app.models.Entry.create([{
