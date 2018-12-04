@@ -46,12 +46,12 @@
     "status": {
       "type": "hasOne",
       "model": "Status",
-      "foreignKey": "fk_status_id"
+      "foreignKey": "id"
     },
     "flavor": {
       "type": "hasOne",
       "model": "Flavor",
-      "foreignKey": "fk_flavor_id"
+      "foreignKey": "id"
     },
     "parentTask": {
       "type": "hasOne",
