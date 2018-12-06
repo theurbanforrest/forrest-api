@@ -12,8 +12,7 @@
       "required": true
     },
     "description": {
-      "type": "string",
-      "required": true
+      "type": "object"
     },
     "task_date_time": {
       "type": "string",

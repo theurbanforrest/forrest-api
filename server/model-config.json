@@ -69,11 +69,11 @@
   },
   "CustomUser": {
     "dataSource": "undercrowd_p1",
-    "public": true
+    "public": false
   },
   "CustomAccessToken": {
     "dataSource": "undercrowd_p1",
-    "public": true
+    "public": false
   },
   "Person": {
     "dataSource": "undercrowd_p1",
