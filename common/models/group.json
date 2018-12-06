@@ -12,7 +12,7 @@
       "required": true
     },
     "description": {
-      "type": "object"
+      "type": "string"
     },
     "business_address": {
       "type": "string"
