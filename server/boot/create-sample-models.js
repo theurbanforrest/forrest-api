@@ -11,7 +11,7 @@ module.exports = function(app) {
 
   /*** BOOT DATA FOR FORREST'S NEW EVENT MANAGER
   ***
-  ***/
+  ***
 
   /// GROUP
 
@@ -93,7 +93,7 @@ module.exports = function(app) {
 
   /**/
   /// ENTRY
-  /**/
+  /**
     app.dataSources.undercrowd_p1.automigrate('Entry', function(err){
       
       app.models.Entry.create([{
