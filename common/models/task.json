@@ -35,6 +35,9 @@
     "fk_parent_task_id": {
       "type": "number"
     },
+    "fk_customuser_id": {
+      "type": "number"
+    },
     "last_modified": {
       "type": "object",
       "required": true
@@ -58,19 +61,19 @@
       "type": "hasOne",
       "model": "Task",
       "foreignKey": "id",
-      "primaryKey" : "fk_parent_task_id"
+      "primaryKey": "fk_parent_task_id"
     },
     "childTasks": {
       "type": "hasMany",
       "model": "Task",
       "foreignKey": "fk_parent_task_id",
-      "primaryKey" : "id"
+      "primaryKey": "id"
     },
     "entries": {
       "type": "hasMany",
       "model": "Entry",
       "foreignKey": "fk_task_id",
-      "primaryKey" : "id"
+      "primaryKey": "id"
     }
   },
   "acls": [
