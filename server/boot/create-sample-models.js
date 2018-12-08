@@ -24,6 +24,7 @@ module.exports = function(app) {
         business_address: '260 Madison Ave. New York, NY 10016',
         fk_flavor_id: 1,
         fk_status_id: 1,
+        fk_customuser_id: 1,
         last_modified: {
           'time': 1543893497082,
           'user': 'DJ Forrest'
@@ -49,6 +50,7 @@ module.exports = function(app) {
         fk_flavor_id: 1,
         fk_status_id: 1,
         fk_group_id: 1,
+        fk_customuser_id: 1,
         last_modified: {
           'time': 1543893497082,
           'user': 'DJ Forrest'
@@ -75,6 +77,7 @@ module.exports = function(app) {
         fk_flavor_id: 1,
         fk_status_id: 1,
         fk_parent_task_id: 1,
+        fk_customuser_id: 1,
         last_modified: {
           'time': 1543893497082,
           'user': 'DJ Forrest'
@@ -103,6 +106,7 @@ module.exports = function(app) {
         fk_flavor_id: 1,
         fk_status_id: 1,
         fk_task_id: 1,
+        fk_customuser_id: 1,
         last_modified: {
           'time': 1543893497082,
           'user': 'DJ Forrest'
