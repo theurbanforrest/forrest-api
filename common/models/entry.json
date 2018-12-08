@@ -49,9 +49,6 @@
       "foreignKey": "id",
       "primaryKey": "fk_status_id"
     },
-    "fk_customuser_id": {
-      "type": "number"
-    },
     "flavor": {
       "type": "hasOne",
       "model": "Flavor",

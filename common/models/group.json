@@ -25,9 +25,6 @@
       "type": "number",
       "required": true
     },
-    "fk_customuser_id": {
-      "type": "number"
-    },
     "last_modified": {
       "type": "object",
       "required": true
