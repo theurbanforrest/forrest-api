@@ -19,6 +19,11 @@
       "options": {
         "disableInclude": true
       }
+    },
+    "tasks":{
+      "type": "hasMany",
+      "model": "Task",
+      "foreignKey": "fk_customuser_id"
     }
   },
   "acls": [],
