@@ -20,7 +20,7 @@
         "disableInclude": true
       }
     },
-    "tasks":{
+    "tasks": {
       "type": "hasMany",
       "model": "Task",
       "foreignKey": "fk_customuser_id"
