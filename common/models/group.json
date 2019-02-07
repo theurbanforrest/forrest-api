@@ -41,18 +41,6 @@
       "foreignKey": "id",
       "primaryKey": "fk_flavor_id"
     },
-    "task": {
-      "type": "hasMany",
-      "model": "Task",
-      "foreignKey": "fk_group_id",
-      "primaryKey": "id"
-    },
-    "person": {
-      "type": "hasMany",
-      "model": "Person",
-      "foreignKey": "fk_group_id",
-      "primaryKey": "id"
-    },
     "people": {
       "type": "hasMany",
       "model": "Person",

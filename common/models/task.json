@@ -77,11 +77,6 @@
       "model": "Entry",
       "foreignKey": "fk_task_id",
       "primaryKey": "id"
-    },
-    "groups": {
-      "type": "belongsTo",
-      "model": "Group",
-      "foreignKey": ""
     }
   },
   "acls": [

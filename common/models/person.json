@@ -28,9 +28,6 @@
       "type": "number",
       "required": true
     },
-    "fk_group_id": {
-      "type": "number"
-    },
     "last_modified": {
       "type": "object",
       "required": true
@@ -49,10 +46,6 @@
       "model": "Flavor",
       "foreignKey": "id",
       "primaryKey": "fk_flavor_id"
-    },
-    "groups": {
-      "type": "hasAndBelongsToMany",
-      "model": "Group"
     }
   },
   "acls": [
