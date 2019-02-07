@@ -11,8 +11,26 @@ module.exports = function(app) {
 
   /*** BOOT DATA FOR FORREST'S NEW EVENT MANAGER
   ***
-  ***
+  ***/
 
+  /// GROUPPERSON
+
+    app.dataSources.undercrowd_p1.automigrate('groupPerson', function(err){
+      
+      app.models.groupPerson.create([{
+
+        groupId: 1,
+        personId: 1
+
+      }, ], function(err, groupPersons) {
+        if(err) throw err;
+
+        console.log('Model groupPerson created: \n', groupPerson);
+      });
+
+    });
+
+  /**
   /// GROUP
 
     app.dataSources.undercrowd_p1.automigrate('Group', function(err){
