@@ -9,6 +9,11 @@
 
 
 module.exports = function(app) {
+
+  /***
+    > Check if this user is a teamMember of the Project
+  **/
+  
   var Role = app.models.Role;
 
   Role.registerResolver('teamMember', function(role, context, cb) {
