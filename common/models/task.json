@@ -104,7 +104,7 @@
       "principalId": "$authenticated",
       "permission": "ALLOW",
       "property": "findById"
-    },
+    }
     
     /**
     {
