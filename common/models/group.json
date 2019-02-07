@@ -53,7 +53,7 @@
       "model": "Person",
       "foreignKey": "fk_group_id",
       "primaryKey": "id"
-    },
+    }
   },
   "acls": [
     {
