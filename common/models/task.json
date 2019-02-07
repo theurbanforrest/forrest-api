@@ -94,10 +94,6 @@
       "principalId": "$everyone",
       "permission": "DENY"
     },
-    /**
-      This allows any authenticated user to do anything
-      2019-02-07: testing out allowing only to teamMembers from boot/role-resolver.js
-    **/
     {
       "accessType": "*",
       "principalType": "ROLE",
@@ -105,16 +101,6 @@
       "permission": "ALLOW",
       "property": "findById"
     }
-    
-    /**
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "teamMember",
-      "permission": "ALLOW",
-      "property": "findById"
-    }
-    **/
   ],
   "methods": {}
 }
