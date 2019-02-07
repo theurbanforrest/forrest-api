@@ -41,7 +41,6 @@
       "foreignKey": "id",
       "primaryKey": "fk_flavor_id"
     },
-
     "task": {
       "type": "hasMany",
       "model": "Task",
@@ -53,6 +52,19 @@
       "model": "Person",
       "foreignKey": "fk_group_id",
       "primaryKey": "id"
+    },
+    "people": {
+      "type": "hasMany",
+      "model": "Person",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "tasks": {
+      "type": "hasMany",
+      "model": "Task",
+      "foreignKey": ""
     }
   },
   "acls": [
