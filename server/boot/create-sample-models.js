@@ -11,7 +11,7 @@ module.exports = function(app) {
 
   /*** BOOT DATA FOR FORREST'S NEW EVENT MANAGER
   ***
-  ***/
+  ***
 
   /// GROUP
 
