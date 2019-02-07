@@ -100,5 +100,9 @@
   "Flavor": {
     "dataSource": "undercrowd_p1",
     "public": true
+  },
+  "groupPerson": {
+    "dataSource": "undercrowd_p1",
+    "public": true
   }
 }

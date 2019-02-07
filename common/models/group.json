@@ -44,7 +44,7 @@
     "people": {
       "type": "hasAndBelongsToMany",
       "model": "Person",
-      "foreignKey": ""
+      "through": "groupPerson"
     }
   },
   "acls": [

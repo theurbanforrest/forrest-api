@@ -7,5 +7,5 @@ module.exports = function(Group) {
 	 var Person = app.models.person;
 	 Group.hasAndBelongsToMany(Person);
 	 Person.hasAndBelongsToMany(Group);
-	 
+
 };
