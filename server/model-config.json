@@ -104,5 +104,9 @@
   "groupPerson": {
     "dataSource": "undercrowd_p1",
     "public": true
+  },
+  "groupTask": {
+    "dataSource": "undercrowd_p1",
+    "public": true
   }
 }
