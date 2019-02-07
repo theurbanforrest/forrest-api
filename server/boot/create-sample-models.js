@@ -11,7 +11,7 @@ module.exports = function(app) {
 
   /*** BOOT DATA FOR FORREST'S NEW EVENT MANAGER
   ***
-  ***
+  ***/
 
   /// GROUP
 
@@ -26,7 +26,7 @@ module.exports = function(app) {
         fk_status_id: 1,
         fk_customuser_id: 1,
         last_modified: {
-          'time': 1543893497082,
+          'time': '2019-02-07T00:00:00Z',
           'user': 'DJ Forrest'
         }
 
@@ -37,6 +37,8 @@ module.exports = function(app) {
       });
 
     });
+
+  /***
 
   /// PERSON
     app.dataSources.undercrowd_p1.automigrate('Person', function(err){
