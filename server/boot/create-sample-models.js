@@ -22,7 +22,7 @@ module.exports = function(app) {
         groupId: 1,
         personId: 1
 
-      }, ], function(err, groupPersons) {
+      }, ], function(err, groupPerson) {
         if(err) throw err;
 
         console.log('Model groupPerson created: \n', groupPerson);
