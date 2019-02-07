@@ -40,9 +40,12 @@
       "model": "Flavor",
       "foreignKey": "id",
       "primaryKey": "fk_flavor_id"
+    },
+    "people": {
+      "type": "hasAndBelongsToMany",
+      "model": "Person",
+      "foreignKey": ""
     }
-
-    
   },
   "acls": [
     {
