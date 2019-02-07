@@ -11,7 +11,7 @@ module.exports = function(app) {
 
   /*** BOOT DATA FOR FORREST'S NEW EVENT MANAGER
   ***
-  ***/
+  ***
 
   /// GROUPPERSON
 
@@ -29,6 +29,24 @@ module.exports = function(app) {
       });
 
     });
+  **/
+
+  /// GROUPTASK
+
+  app.dataSources.undercrowd_p1.automigrate('groupTask', function(err){
+      
+    app.models.groupPerson.create([{
+
+      groupId: 1,
+      taskId: 1
+
+    }, ], function(err, groupTask) {
+      if(err) throw err;
+
+      console.log('Model groupTask created: \n', groupTask);
+    });
+
+  });
 
   /**
   /// GROUP
