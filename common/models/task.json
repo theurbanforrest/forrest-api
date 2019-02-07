@@ -38,9 +38,6 @@
     "fk_customuser_id": {
       "type": "number"
     },
-    "fk_group_id": {
-      "type": "number"
-    },
     "last_modified": {
       "type": "object",
       "required": true
