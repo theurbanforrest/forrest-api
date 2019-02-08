@@ -28,14 +28,14 @@
   },
   "RoleMapping": {
     "dataSource": "db",
-    "public": true,
+    "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
     "dataSource": "db",
-    "public": true
+    "public": false
   },
   "CoffeeShop": {
     "dataSource": "mysqlDs",
@@ -71,11 +71,11 @@
   },
   "CustomUser": {
     "dataSource": "undercrowd_p1",
-    "public": true
+    "public": false
   },
   "CustomAccessToken": {
     "dataSource": "undercrowd_p1",
-    "public": true
+    "public": false
   },
   "Person": {
     "dataSource": "undercrowd_p1",
