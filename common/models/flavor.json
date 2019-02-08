@@ -18,6 +18,9 @@
     "description": {
       "type": "string"
     },
+    "data": {
+      "type": "object"
+    },
     "last_modified": {
       "type": "object",
       "required": true
